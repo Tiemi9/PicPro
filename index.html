@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link 
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" 
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" 
             rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="./style.css">
@@ -34,40 +34,63 @@
         </header>
 
         <!--Conteúdo Principal-->
-        <main>
+        <main class="main">
             
-            <section class="secaoDetalhesConta">
+            <section class="secaoDetalhesdaConta">
 
-                <div class="Container">
+                <div class="container">
 
                     <div class="secaoDetalhesdaConta_sobreUsuario">
-                        <img src="../picpro/assets/img/usuario.png" alt="Ícone do Usuário">
-                        <p>Olá, <strong>@mariaporcina</strong></p>
-                        <img src="../picpro/assets/img/presente.png" alt="Ícone Presente">
-                        <img src="../picpro/assets/img/chat.png" alt="Ícone Chat">
+                        <div class="secaoDetalhesdaConta_sobreUsuario_Dados">
+                            <img src="../picpro/assets/img/usuario.png" alt="Ícone do Usuário">
+                            <p>Olá,<strong>@alguemfeliz</strong></p>
+                        </div>
+                        
+                        <div class="secaoDetalhesdaConta_sobreUsuario_icones">
+                            <img src="../picpro/assets/img/presente.png" alt="Ícone Presente">
+                            <img src="../picpro/assets/img/chat.png" alt="Ícone Chat">
+                        </div>
                     </div>
 
                     <div class="secaoDetalhesdaConta_sobreSaldo">
-                        <p>Saldo PicPay <strong>R$ 0,00</strong></p>
-                        <img src="../picpro/assets/img/visualizar.png" alt="Ícone Vizualizar">
-                        <button>Extrato</button>
+                        <div class="secaoDetalhesdaConta_sobreSaldo_saldo">
+                            <div class="secaoDetalhesdaConta_sobreSaldo_saldo_texto">
+                                <p>Saldo PicPay </p>
+                            </div>
+                            <div class="secaoDetalhesdaConta_sobreSaldo_saldo_valor">
+                                <p><strong>R$ 100.000,00</strong></p>
+                                <img src="../picpro/assets/img/visualizar.png" alt="Ícone Vizualizar">
+                            </div>
+                            
+                        </div>
+                        <div class="secaoDetalhesdaConta_sobreSaldo_btn">
+                            <button>Extrato</button>
+                        </div>                   
                     </div>
 
                      <ul class="secaoDetalhesdaConta_sobreTransacoes">
-                        <li class="secaoDetalhesdaConta_itemTransacao">
-                            <img src="../picpro/assets/img/qrcode.png" alt="Ícone QR Code">
+                        <li class="secaoDetalhesdaConta_itemTransacao secaoDetalhesdaConta_itemTransacao_qrCode" id="1">
+                            <figure>
+                                <img src="../picpro/assets/img/qrcode.png" alt="Ícone QR Code">
+                            </figure>
                             <p>QR Code</p>
                         </li>
-                        <li class="secaoDetalhesdaConta_itemTransacao">
-                            <img src="../picpro/assets/img/pix.png" alt="Ícone Pix">
+                        <li class="secaoDetalhesdaConta_itemTransacao secaoDetalhesdaConta_itemTransacao_pix" id="2">
+                            <figure>
+                                <img src="../picpro/assets/img/pix.png" alt="Ícone Pix">
+                            </figure>
                             <p>Pix</p>
                         </li>
-                        <li class="secaoDetalhesdaConta_itemTransacao">
-                            <img src="../picpro/assets/img/codigo.png" alt="Ícone Boleto">
+                        <li class="secaoDetalhesdaConta_itemTransacao secaoDetalhesdaConta_itemTransacao_boleto" id="3">
+                            <figure>
+                                <img src="../picpro/assets/img/codigo.png" alt="Ícone Boleto">
+                            </figure>
                             <p>Pagar Boleto</p>
                         </li>
-                        <li class="secaoDetalhesdaConta_itemTransacao">
-                            <img src="../picpro/assets/img/cobrar-icon.png" alt="">
+                        <li class="secaoDetalhesdaConta_itemTransacao secaoDetalhesdaConta_itemTransacao_cobrar" id="4">
+                            <figure>
+                                <img src="../picpro/assets/img/cobrar-icon.png" alt="">
+                            </figure>
                             <p>Cobrar</p>
                         </li>
                     </ul>
@@ -82,45 +105,45 @@
                 <div class="container">
 
                     <!-- div selecione forma de pagamento -->
-                    <div class="secaoTransacao_avisoSelecao">
+                    <div class="secaoTransacao_avisoSelecao mostrar">
                         <p>Selecione a forma de pagamento</p>
                         <img src="../picpro/assets/img/banner.png" alt="Banner PicPay">
                     </div>
 
                     <!-- div do qrcode -->
-                    <div class="secaoTransacao_QrCode">
+                    <div data-id="1" class="secaoTransacao_QrCode">
                         <img src="../picpro/assets/img/qrcode-imagem.png" alt="Imagem QR Code">
-                        <p>@mariaporcina</p>
+                        <p>@alguemfeliz</p>
                         <button>Cobre um amigo</button>
                         <a href="">Compartilhar meu código</a>
                     </div>
 
                     <!-- div do pix -->
-                    <div class="secaoTransacao_Pix">
+                    <div data-id="2" class="secaoTransacao_Pix">
                         <img src="../picpro/assets/img/pix-logo.png" alt="Logo Pix">
                         <div class="secaoTransacao_boxOpcao">
                             <img src="../picpro/assets/img/pix1.png" alt="ìcone Opção Pix">
-                            <p>Insira um código Pix Copia e Cola para envi</p>
+                            <p>Insira um código Pix Copia e Cola para enviar um pagamento.</p>
                         </div>
                         <div class="secaoTransacao_boxOpcao">
                             <img src="../picpro/assets/img/pix2.png" alt="ìcone Opção Pix">
-                            <p>Insira um código Pix Copia e Cola para enviar um pagamento</p>
+                            <p>Insira um código Pix Copia e Cola para enviar um pagamento.</p>
                         </div>
                     </div>
 
                     <!-- div de boleto -->
-                    <div class="secaoTransacao_pagarBoleto">
+                    <div data-id="3" class="secaoTransacao_pagarBoleto">
                         <img src="../picpro/assets/img/boleto.png" alt="Ícone Boleto">
                         <h2>Pagar com código de barras</h2>
                         <p>
                             Você pode parcelar em até 12x no cartão ou usar seu saldo em
                             carteira pra pagar à vista.
                         </p>
-                        <input type="text" placeholder=""Insira o código de barras>                   
+                        <input type="text" placeholder="Insira o código de barras">                   
                     </div>
 
                     <!--div Cobrar-->
-                    <div class="secaoTransacao_cobrar">
+                    <div data-id="4" class="secaoTransacao_cobrar">
                         <img src="../picpro/assets/img/cobrar.png" alt="Ícone Cobrar">
                         <h2>Cobrar</h2>
                         <p>Divida a conta co os amigos de forma fácil</p>
@@ -151,7 +174,7 @@
                             </a>                           
                         </li>
 
-                        <li class="rodape_menuItem">
+                        <li class="rodape_menuItem rodape_menuItem_carteira">
                             <a href="#">
                                <img src="../picpro/assets/img/carteira-icon.png" alt="Ícone Carteira">
                                <p>Carteira</p> 
@@ -186,7 +209,7 @@
             </footer>
 
         </main>
-
+        <script src="./script.js"></script>
     </body>
 
 </html>
