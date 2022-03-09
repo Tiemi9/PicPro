@@ -27,7 +27,7 @@ function identificarOpcoes(event) {
     //selecionando uma seção utilizando o ID (escolha do usuário)
     const secaoEscolha = document.querySelector(`div[data-id="${id}"]`)
                  
-      //REMOCENDO CLASSE MOSTRAR
+      //REMOVENDO CLASSE MOSTRAR
       removeClasseMostrar()
     
     //adicionar uma classe (mostrar)
