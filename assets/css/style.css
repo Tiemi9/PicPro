@@ -1,10 +1,10 @@
 body {
-    background-color: #ebd82c;
+    background-color: #228664;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 20px;
     line-height: 22px;
-    
+
 }
 
 .container {
@@ -128,7 +128,7 @@ body {
     height: 50px;
     width: 50px;
     margin-bottom: 10px;
-  }
+}
 
 .secaoDetalhesdaConta_itemTransacao_pix:hover figure {
     background-image: url("../img/pix-verde.png");
@@ -142,7 +142,7 @@ body {
     height: 50px;
     width: 50px;
     margin-bottom: 10px;
-  }
+}
 
 .secaoDetalhesdaConta_itemTransacao_boleto:hover figure {
     background-image: url("../img/boleto-verde.png");
@@ -156,7 +156,7 @@ body {
     height: 55px;
     width: 70px;
     margin-bottom: 10px;
-  }
+}
 
 .secaoDetalhesdaConta_itemTransacao_cobrar:hover figure {
     background-image: url("../img/cobrar-verde.png");
@@ -178,7 +178,7 @@ body {
     height: 60px;
     opacity: 0;
     margin: 2px;
-  }
+}
 
 .secaoTransacao {
     background-color: #fff;
