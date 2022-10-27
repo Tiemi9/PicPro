@@ -9,7 +9,7 @@ Ministrado por Kenzie Academy, em parceria com a PicPay, esse projeto foi desenv
 - CSS e 
 - Java Script.
 
-![Acesse!!👈](https://tiemi9.github.io/PicPro/)
+[Acesse!!👈](https://tiemi9.github.io/PicPro/)
 
 ##  💻 Contato
 
